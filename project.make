@@ -11,6 +11,7 @@ projects[]= stacksight
 projects[]= security_review
 projects[]= yoast_seo
 projects[]= backup_migrate
+projects[]= metatag
 
 ; Drush make allows a default sub directory for all contributed projects.
 defaults[projects][subdir] = contrib
