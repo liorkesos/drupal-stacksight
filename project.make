@@ -9,9 +9,11 @@ projects[drupal][patch][] = "https://drupal.org/files/issues/install-redirect-on
 projects[]= stacksight
 ; For stacksight health
 projects[]= security_review
-projects[]= yoast_seo
 projects[]= backup_migrate
+projects[]= yoast_seo
+; yoast dependencies
 projects[]= metatag
+projects[]= ctools
 
 ; Drush make allows a default sub directory for all contributed projects.
 defaults[projects][subdir] = contrib
