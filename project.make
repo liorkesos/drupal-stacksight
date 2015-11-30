@@ -15,6 +15,7 @@ projects[]= yoast_seo
 projects[]= metatag
 projects[]= ctools
 projects[]=pathauto
+projects[]= token
 
 ; Drush make allows a default sub directory for all contributed projects.
 defaults[projects][subdir] = contrib
