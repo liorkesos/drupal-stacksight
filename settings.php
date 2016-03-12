@@ -8,7 +8,6 @@ if (file_exists($local_settings)) {
 
 $vars= json_decode(base64_decode(getenv("PLATFORM_VARIABLES")));
 if (isset($vars->STACKSIGHT_TOKEN)){
-  dpm($vars->STACKSIGHT_TOKEN);
   $stacksight_bootstrap =  DRUPAL_ROOT . '/sites/all/modules/contrib/stacksight' . '/stacksight-php-sdk/bootstrap-drupal.php';
   if (file_exists($stacksight_bootstrap)) {
 // Just a comment
