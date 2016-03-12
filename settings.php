@@ -10,7 +10,7 @@ $vars= json_decode(base64_decode(getenv("PLATFORM_VARIABLES")));
 if (isset($vars->STACKSIGHT_TOKEN)){
   $stacksight_bootstrap =  DRUPAL_ROOT . '/sites/all/modules/contrib/stacksight' . '/stacksight-php-sdk/bootstrap-drupal.php';
   if (file_exists($stacksight_bootstrap)) {
-  define('STACKSIGHT_APP_ID',$vars->STACKSIGHT_APP_ID);
+  define('STACKSIGHT_GROUP','demos');
   define('STACKSIGHT_TOKEN', $vars->STACKSIGHT_TOKEN);
   require_once(DRUPAL_ROOT . '/sites/all/modules/contrib/stacksight' . '/stacksight-php-sdk/bootstrap-drupal.php');
   } else {
